@@ -14,7 +14,7 @@
 }
 
 .container {
-  width: 97%;
+  max-width: 60%;
   height: 97%;
   border-radius: 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
