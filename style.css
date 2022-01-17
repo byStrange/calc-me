@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 60%;
+  width: 60%;
   height: 97%;
   border-radius: 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
@@ -144,4 +144,21 @@
   border-color: rgba(255, 0, 0, 1) !important;
   background: rgba(255, 0, 0, 0.125) !important;
   color: #fff !important;
+}
+
+@media screen and (max-width: 660px) {
+  .container {
+    width: 100%;
+  }
+  .row.questions .big.bold.text {
+    font-size: 50pt !important;
+  }
+}
+@media screen and (max-width: 340px) {
+  .btn.md {
+    transform: scale(0.7, 0.7);
+  }
+  .row.questions .big.bold.text {
+    font-size: 40pt !important;
+  }
 }
