@@ -38,6 +38,15 @@ function init_() {
     ];
   every = every.sort(() => 0.5 - Math.random());
   el.innerText = example.ex;
+  el.innerHTML = el.textContent.replace(/\S/g, "<anime>$&</anime>");
+  anime({
+    targets: "anime",
+    opacity: [0, 1],
+    scale: [3, 1],
+    translateX: [40, 0],
+    ease: "easeOutExpo",
+    delay: anime.stagger(10)
+  });
   for (let each in cols) {
     cols[each].innerText = every[each];
   }
